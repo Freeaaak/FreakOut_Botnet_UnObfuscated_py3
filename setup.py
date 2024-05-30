@@ -749,7 +749,7 @@ class mainprocess():
         except:
             pass
         self.threadids[thrid][0] -= 1
-        elif "443" in str(srvport):
+        if "443" in str(srvport):  # Add a proper if condition here
             url = "https://"+ip+":"+str(srvport)
         elif srvport == 445:
             userfag,passwd=self.esmbBrute(ip,thrid)
